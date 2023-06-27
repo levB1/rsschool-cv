@@ -19,7 +19,8 @@ I'm a diligent and hardworking person. I always study something new to be more i
 
 ### Code Example: 
 function that takes array and return increased by 1 it's elements:
-```function getElements(arr, n) {
+```
+function getElements(arr, n) {
     const missingElements = n - arr.length;
     if (missingElements > 0) {
       for (let i = 0; i < missingElements; i++) {
