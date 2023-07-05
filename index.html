@@ -1,54 +1,132 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head></head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My CV</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-<div class="cv"></div>
- <section>
-     <h1>Lev Brevnov</h1>
-     <h2>Junior Front-End Developer</h2>
-
-     <div class="contacts">
-        <div class="contact">
-            <div class="contact__type">
-                Email
-            </div>
-            <div class="contact__value">
-                <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcRwRfGHwWDKbcnKPzcTWJlmlCfbDFclmLvChpcvKTctKwFnTNgJGPQscrBHSxqWPxdRRQKTg">hcadmiral24@gmail.com</a>
-            </div>
-        </div>
-        <div class="contact">
-         <div class="contact__type">
-             Telegram
-            </div>
-            <div class="contact__value">
-             <a href="tg://resolve?domain=wourldwide">@wourldwide</a>
-            </div>
-        </div>
-        <div class="contact">
-            <div class="contact__type">
-                Github
-            </div>
-            <div class="contact__value">
-                <a href="https://github.com/levB1">LevB1</a>
-            </div>
-        </div>
-     </div>
-     <div class="description">
-        I am a diligent and hardworking person. 
-        I always study something new to be more intelligent and competive. 
-        I was working as sales manager for 1 year since I was 18 years old. 
-        Nowadays I am working as a technical support specialist in online children’s 
-        educational school.
-     </div>
-    </section>
-
+<nav class="nav flex">
+    <ul class="list-reset nav_list flex">
+        <li class="nav__list-item"><a href="#contacts" class="link-reset nav_list-link">Contacts</a></li>
+        <li class="nav__list-item"><a href="#about myself" class="link-reset nav_list-link">About Myself</a></li>
+        <li class="nav__list-item"><a href="#skills" class="link-reset nav_list-link">Skills</a></li>
+        <li class="nav__list-item"><a href="#code" class="link-reset nav_list-link">Code</a></li>
+        <li class="nav__list-item"><a href="#courses" class="link-reset nav_list-link">Courses</a></li>
+        <li class="nav__list-item"><a href="#languages" class="link-reset nav_list-link">Languages</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="cv"></div>
     <section>
-        
+        <h1>Lev Brevnov</h1>
+        <h2>Junior Front-End Developer</h2>
+        <div class="contacts">
+            <div class="contact">
+                <div class="contact__type">
+                    Email
+                </div>
+                <div class="contact__value">
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcRwRfGHwWDKbcnKPzcTWJlmlCfbDFclmLvChpcvKTctKwFnTNgJGPQscrBHSxqWPxdRRQKTg">hcadmiral24@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact__type">
+                    Telegram
+                </div>
+                <div class="contact__value">
+                    <a href="tg://resolve?domain=wourldwide">@wourldwide</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact__type">
+                    Github
+                </div>
+                <div class="contact__value">
+                    <a href="https://github.com/levB1">LevB1</a>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            I am a diligent and hardworking person. 
+            I always study something new to be more intelligent and competitive. 
+            I was working as a sales manager for 1 year since I was 18 years old. 
+            Nowadays, I am working as a technical support specialist in an online children’s educational school.
+        </div>
     </section>
+     <section>
+        <h3>Skills</h3>
+        <div class="Skills"></div>
+        <ul>
+            <li>Python Basic</li>
+            <li>JS Basic</li>
+            <li>Git, GitHub</li>
+            <li>Virtual Box</li>
+            <li>VScode</li>
+            <li>Blind typing</li>
+            <li>Html&Css basic</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Code</h3>
+        <div class="code"></div>
+        <pre>
+            <code>
+                function getElements(arr, n) {
+                    const missingElements = n - arr.length;
+                    if (missingElements > 0) {
+                      for (let i = 0; i < missingElements; i++) {
+                        arr.push(i + arr.length + 1)
+                      }
+                    }
+                    return arr.slice(0, n)
+                  }
+                  const myArray = [1, 2, 3, 4, 5, 6, 7, 8]
+                  const result = getElements(myArray, 5)
+                  console.log(result)
+            </code>
+          </pre>
+    </section>
+    <section>
+        <h3>Courses</h3>
+        <div class="courses"></div>
+        <a href="https://www.sololearn.com/certificates/CT-NIRWIPIM">Sololearn, Python for Beginners</a>
+    </section>
+    <section>
+        <h3>Languages</h3>
+        <div class="Languages">
+            <pre>
+         Russian(native speaker)
+         English(C1/B2)
+            </pre>
+            </div>
+    </section>
+    <section>
+        <div class="about-me-container">
+            <div class="contacts" id="contacts">
+            </div>
+            <div class="about myself" id="about myself">
+            </div>
+            <div class="skills" id="skills">
+            </div>
+            <div class="code" id="code">
+            </div>
+            <div class="courses" id="courses">
+            </div>
+            <div class="languages" id="languages">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+    <div class="footer__container container flex">
+        <span class="footer copy">© 2023</span>
+        <a href="https://github.com/levB1">LevB1
+            <img class="gh_logo" src="img/icons8-github.svg" alt="GitHub">
+        </a> 
+    </div>
+</footer>
 </body>
 </html>
-
