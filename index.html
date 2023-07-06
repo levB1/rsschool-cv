@@ -1,132 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/new-styles.css">
 </head>
+
 <body>
-<nav class="nav flex">
-    <ul class="list-reset nav_list flex">
-        <li class="nav__list-item"><a href="#contacts" class="link-reset nav_list-link">Contacts</a></li>
-        <li class="nav__list-item"><a href="#about myself" class="link-reset nav_list-link">About Myself</a></li>
-        <li class="nav__list-item"><a href="#skills" class="link-reset nav_list-link">Skills</a></li>
-        <li class="nav__list-item"><a href="#code" class="link-reset nav_list-link">Code</a></li>
-        <li class="nav__list-item"><a href="#courses" class="link-reset nav_list-link">Courses</a></li>
-        <li class="nav__list-item"><a href="#languages" class="link-reset nav_list-link">Languages</a></li>
-    </ul>
-</nav>
-<main>
-    <div class="cv"></div>
-    <section>
-        <h1>Lev Brevnov</h1>
-        <h2>Junior Front-End Developer</h2>
-        <div class="contacts">
-            <div class="contact">
-                <div class="contact__type">
-                    Email
-                </div>
-                <div class="contact__value">
-                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcRwRfGHwWDKbcnKPzcTWJlmlCfbDFclmLvChpcvKTctKwFnTNgJGPQscrBHSxqWPxdRRQKTg">hcadmiral24@gmail.com</a>
+    <header>
+        <nav class="flex-nav">
+            <div class="container">
+                <div class="grid">
+                    <div class="column-xs-9 column-md-8">
+                        <p id="logo">My CV<span id="highlight">.</span></p>
+                    </div>
+                    <div class="column-xs-3 column-md-4">
+                        <a href="#" class="toggle-nav">Menu <i class="ion-navicon-round"></i></a>
+                        <ul class="nav_menu-items">
+                            <li><a href="#">Contacts</a></li>
+                            <li><a class="nav_btn" href="#about">About Myself</a></li>
+                            <li><a class="nav_btn" href="#skills">Skills</a></li>
+                            <li><a class="nav_btn" href="#code">Code</a></li>
+                            <li><a class="nav_btn" href="#courses">Courses</a></li>
+                            <li><a class="nav_btn" href="#languages">Languages</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="contact">
-                <div class="contact__type">
-                    Telegram
-                </div>
-                <div class="contact__value">
-                    <a href="tg://resolve?domain=wourldwide">@wourldwide</a>
+        </nav>
+    </header>
+    <main class="intro-section">
+        <div class="container">
+            <div class="grid">
+                <div class="column-xs-12">
+                    <ul class="slider">
+                        <li id="about" class="slider-item active">
+                            <div class="grid vertical">
+                                <div class="column-xs-12 column-md-2 hide-mobile">
+                                    <div class="intro">
+                                        <a href="#">
+                                            <h1 class="title"><span class="underline">Lev Brevnov</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column-xs-12 column-md-10">
+                                    <div class="image-holder">
+                                        <img src="https://source.unsplash.com/cddaZDt6uRw">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="column-xs-12 column-md-9">
+                                            <div class="intro show-mobile">
+                                                <a href="#">
+                                                    <h1 class="title"><span class="underline">Lev Brevnov</span></h1>
+                                                </a>
+                                            </div>
+                                            <p class="description">I am a diligent and hardworking person.
+                                                I always study something new to be more intelligent and competitive.
+                                                I was working as a sales manager for 1 year since I was 18 years old.
+                                                Nowadays, I am working as a technical support specialist in an online
+                                                children’s educational school.</p>
+                                                <div class="contacts" style="margin-top: 20px;">
+                                                    <div class="contact">
+                                                        <div class="contact__type">
+                                                            Email
+                                                        </div>
+                                                        <div class="contact__value">
+                                                            <a
+                                                                href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcRwRfGHwWDKbcnKPzcTWJlmlCfbDFclmLvChpcvKTctKwFnTNgJGPQscrBHSxqWPxdRRQKTg">hcadmiral24@gmail.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="contact">
+                                                        <div class="contact__type">
+                                                            Telegram
+                                                        </div>
+                                                        <div class="contact__value">
+                                                            <a href="tg://resolve?domain=wourldwide">@wourldwide</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="contact">
+                                                        <div class="contact__type">
+                                                            Github
+                                                        </div>
+                                                        <div class="contact__value">
+                                                            <a href="https://github.com/levB1">LevB1</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="skills" class="slider-item">
+                            <div class="grid vertical">
+                                <div class="column-xs-12 column-md-2 hide-mobile">
+                                    <div class="intro">
+                                        <a href="#">
+                                            <h1 class="title"><span class="underline">Skills</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column-xs-12 column-md-10">
+                                    <div class="image-holder">
+                                        <img src="https://source.unsplash.com/Pz3EHf-KJfc">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="column-xs-12 column-md-9">
+                                            <div class="intro show-mobile">
+                                                <a href="#">
+                                                    <h1 class="title"><span class="underline">Skills</span></h1>
+                                                </a>
+                                            </div>
+                                            <p class="description">Python Basic, JS Basic, Git, GitHub, Virtual Box,
+                                                VScode, Blind typing, Html&Css basic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="code" class="slider-item">
+                            <div class="grid vertical">
+                                <div class="column-xs-12 column-md-2 hide-mobile">
+                                    <div class="intro">
+                                        <a href="#">
+                                            <h1 class="title"><span class="underline">Code</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column-xs-12 column-md-10">
+                                    <div class="image-holder">
+                                        <img src="https://source.unsplash.com/peYW3VwICpE">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="column-xs-12 column-md-9">
+                                            <div class="intro show-mobile">
+                                                <a href="#">
+                                                    <h1 class="title"><span class="underline">Code</span></h1>
+                                                </a>
+                                            </div>
+                                            <pre>
+                                            <code class="description">
+                                                    function getElements(arr, n) {
+                                                        const missingElements = n - arr.length;
+                                                        if (missingElements > 0) {
+                                                        for (let i = 0; i < missingElements; i++) {
+                                                            arr.push(i + arr.length + 1)
+                                                        }
+                                                        }
+                                                        return arr.slice(0, n)
+                                                    }
+                                                    const myArray = [1, 2, 3, 4, 5, 6, 7, 8]
+                                                    const result = getElements(myArray, 5)
+                                                    console.log(result)
+                                                </code>
+                                                </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="courses" class="slider-item">
+                            <div class="grid vertical">
+                                <div class="column-xs-12 column-md-2 hide-mobile">
+                                    <div class="intro">
+                                        <a href="#">
+                                            <h1 class="title"><span class="underline">Courses</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column-xs-12 column-md-10">
+                                    <div class="image-holder">
+                                        <img src="https://source.unsplash.com/VmeOZQjTVGE">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="column-xs-12 column-md-9">
+                                            <div class="intro show-mobile">
+                                                <a href="#">
+                                                    <h1 class="title"><span class="underline">Courses</span></h1>
+                                                </a>
+                                            </div>
+                                            <p class="description">Sololearn, Python for Beginners
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="languages" class="slider-item">
+                            <div class="grid vertical">
+                                <div class="column-xs-12 column-md-2 hide-mobile">
+                                    <div class="intro">
+                                        <a href="#">
+                                            <h1 class="title"><span class="underline">Languages</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column-xs-12 column-md-10">
+                                    <div class="image-holder">
+                                        <img src="https://source.unsplash.com/VmeOZQjTVGE">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="column-xs-12 column-md-9">
+                                            <div class="intro show-mobile">
+                                                <a href="#">
+                                                    <h1 class="title"><span class="underline">Languages</span></h1>
+                                                </a>
+                                            </div>
+                                            <p class="description">
+                                                <pre>
+                                                Russian(native speaker)
+                                                English(C1/B2)
+                                                   </pre>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="grid">
+                        <div class="column-xs-12">
+                            <div class="controls">
+                                <button class="previous">
+                                    <span class="visually-hidden">Previous</span>
+                                    <span class="icon arrow-left" aria-hidden="true"></span>
+                                    </a>
+                                    <button class="next">
+                                        <span class="visually-hidden">Next</span>
+                                        <span class="icon arrow-right" aria-hidden="true"></span>
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="contact">
-                <div class="contact__type">
-                    Github
-                </div>
-                <div class="contact__value">
-                    <a href="https://github.com/levB1">LevB1</a>
-                </div>
-            </div>
+    </main>
+    <footer class="footer"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="footer__container container flex">
+            <span class="footer copy">© 2023</span>
+            <a href="https://github.com/levB1">LevB1
+                <img class="gh_logo" width="30" height="30" src="img/icons8-github.svg" alt="GitHub">
+            </a>
         </div>
-        <div class="description">
-            I am a diligent and hardworking person. 
-            I always study something new to be more intelligent and competitive. 
-            I was working as a sales manager for 1 year since I was 18 years old. 
-            Nowadays, I am working as a technical support specialist in an online children’s educational school.
-        </div>
-    </section>
-     <section>
-        <h3>Skills</h3>
-        <div class="Skills"></div>
-        <ul>
-            <li>Python Basic</li>
-            <li>JS Basic</li>
-            <li>Git, GitHub</li>
-            <li>Virtual Box</li>
-            <li>VScode</li>
-            <li>Blind typing</li>
-            <li>Html&Css basic</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Code</h3>
-        <div class="code"></div>
-        <pre>
-            <code>
-                function getElements(arr, n) {
-                    const missingElements = n - arr.length;
-                    if (missingElements > 0) {
-                      for (let i = 0; i < missingElements; i++) {
-                        arr.push(i + arr.length + 1)
-                      }
-                    }
-                    return arr.slice(0, n)
-                  }
-                  const myArray = [1, 2, 3, 4, 5, 6, 7, 8]
-                  const result = getElements(myArray, 5)
-                  console.log(result)
-            </code>
-          </pre>
-    </section>
-    <section>
-        <h3>Courses</h3>
-        <div class="courses"></div>
-        <a href="https://www.sololearn.com/certificates/CT-NIRWIPIM">Sololearn, Python for Beginners</a>
-    </section>
-    <section>
-        <h3>Languages</h3>
-        <div class="Languages">
-            <pre>
-         Russian(native speaker)
-         English(C1/B2)
-            </pre>
-            </div>
-    </section>
-    <section>
-        <div class="about-me-container">
-            <div class="contacts" id="contacts">
-            </div>
-            <div class="about myself" id="about myself">
-            </div>
-            <div class="skills" id="skills">
-            </div>
-            <div class="code" id="code">
-            </div>
-            <div class="courses" id="courses">
-            </div>
-            <div class="languages" id="languages">
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="footer" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-    <div class="footer__container container flex">
-        <span class="footer copy">© 2023</span>
-        <a href="https://github.com/levB1">LevB1
-            <img class="gh_logo" src="img/icons8-github.svg" alt="GitHub">
-        </a> 
-    </div>
-</footer>
+    </footer>
+    <script defer src="./JS/new-land.js"></script>
 </body>
+
 </html>
