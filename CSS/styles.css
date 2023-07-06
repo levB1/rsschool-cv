@@ -46,7 +46,7 @@
  img {
 	 width: 100%;
 	 height: 43vh;
-	 object-fit: cover;
+	 object-fit: contain;
 }
  .vertical {
 	 flex-direction: column;
